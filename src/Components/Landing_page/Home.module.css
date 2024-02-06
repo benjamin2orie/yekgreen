@@ -1,0 +1,116 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #FAFAFA;
+}
+
+.page_container{
+    display: flex;
+    justify-content: space-evenly;
+    background: green;
+    padding-top: 2em;
+}
+
+.icon{
+    padding-right: 2em;
+    visibility: hidden;
+
+}
+.Login{
+    background: #000;
+    color: #ddd;
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
+    height: 60px;
+    padding-top: 1em;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.page_title h1{
+    /* color: #04471C; */
+    color: #04471C;
+    font-size: 30px;
+    text-transform: capitalize;
+    /* background: #f4f4f4; */
+
+}
+
+/* this is where the main design started */
+.page_title{
+    text-align: center;
+    padding-top: 6em;
+}
+.page_title p{
+    color: #020202;
+    font: 19.5px;
+    font-size: 25px;
+    line-height: 32px;
+    padding-top: 1em;
+
+}
+.input_search{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.search{
+    flex: 0.4;
+    height: 40px;
+    padding-left: 1em;
+    color: #020202;
+    font-size: 20px;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+::placeholder{
+    color: #ddd;
+}
+.btn{
+    width: 5%;
+    border-left: none;
+    background: #04471C;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+
+}
+
+/* styling first image */
+.dish{
+    width: 100%;
+    margin-top: 3em;
+    height: 800px;
+}
+
+.radius{
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background: #020202;
+
+}
+.radil{
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    border: 3px solid #020202;
+
+}
+.container_radius{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2em;
+}
+
+

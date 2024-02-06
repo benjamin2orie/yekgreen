@@ -1,0 +1,131 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.container_main{
+    background: #f4f4f4;
+    margin-top: 8em;
+    padding-top: 5em;
+    width: 100%;
+    height: 800px;
+    /* padding-left: 3em; */
+
+}
+.container_main h2{
+    font-size: 80px;
+    color: #0D2819;
+    text-transform: capitalize;
+    font-family: 'work Sans';
+    font-weight: 700px;
+    padding-bottom: 2em;
+    text-align: center;
+
+}
+
+.breakfast,
+.lunch,
+.dinner{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 500px;
+    height: 300px;
+}
+.main{
+    display: flex;
+    gap: 1em;
+}
+
+.image_container h3{
+    color: #FFFFFF;
+    position: relative;
+    bottom: 50px;
+    left: 25px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'work Sans'; */
+    /* bottom: 0.01px; */
+
+}
+
+.fsection h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    font-weight: bolder;
+}
+
+/* styling the images on the feature section */
+.feature{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    /* border-bottom-left-radius: 5px; */
+    /* border-bottom-right-radius: 5px; */
+    width: 500px;
+    height: 300px;
+
+}
+.card{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.card2{
+    border: 2px solid #6E6E6E;
+    border-top: none;
+    height: 120px;
+    position: relative;
+    bottom: 5px;
+    width: 500px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* styling the text on the feature section */
+.love{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+  .love2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    }
+
+.love p{
+    color: #020202;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heart{
+    color: #058B42;
+    cursor: pointer;
+
+}
+.love2 .para{
+    color: #058B42;
+    font-size: 20px;
+
+}
+
+.para .grey{
+    color: #6E6E6E;
+}
+
