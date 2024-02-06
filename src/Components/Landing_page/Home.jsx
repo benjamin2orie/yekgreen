@@ -22,7 +22,7 @@ const Home = () => {
                     <ul>
                         <li>about us</li>
                         <li>recipes</li>
-                        <li>blog</li>
+                        <li>blogs</li>
                     </ul>
                     <div className={styles.Login}>
                         <p>signup /<span> register</span></p>
