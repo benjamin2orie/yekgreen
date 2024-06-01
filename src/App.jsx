@@ -1,11 +1,11 @@
 // import './App.css'
 import React from 'react';
-// import Navbar from './Components/Navbar';
-import About from './Components/Landing_page/About';
-import Contact from './Components/Landing_page/Contact';
+// import About from './Components/Landing_page/About';
+// import Contact from './Components/Landing_page/Contact';
+import Login from './Router/Login';
 import Home from './Components/Landing_page/Home';
-// import Home from './Components/Landing_page/Home';
 import { Route, Routes } from 'react-router-dom';
+// import Navigate from './Router/Navigate';
 
 function App() {
 
@@ -14,12 +14,11 @@ function App() {
         
       <Routes>
         <Route path='*'element={<>
-          {/* <Navbar/> */}
           <Home/>
-          {/* <About/> */}
+          {/* <Navigate/> */}
         </>}/>
-        <Route path='/About' element={<About/>}/>
-        <Route path='/Contact' element={<Contact/>}/>
+        <Route path='/Login' element={<Login/>}/>
+        {/* <Route path='/Contact' element={<Contact/>}/> */}
       </Routes>
       
     </>

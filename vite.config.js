@@ -7,4 +7,7 @@ export default defineConfig({
   base: "/yekgreen",
 
   plugins: [react()],
+  server:{
+    port: 3000,
+  }
 })

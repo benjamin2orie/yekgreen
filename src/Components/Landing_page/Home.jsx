@@ -2,14 +2,18 @@
 
 import React from 'react';
 import styles from './Home.module.css';
-import {MdSearch} from 'react-icons/md';
+import {MdNavigateBefore, MdNavigateNext, MdSearch,} from 'react-icons/md';
 import Dish from '../Image/miner.jpeg';
-// import Navbar from '../Navbar';
 import MenuIcon from '../Image/Layer_x0020_1logo.png';
 import Icon_menu from '../Image/menu-variantmenu.png';
 import SubHome from './SubHome';
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
+    const Notify = ({isActive}) =>{isActive
+    ? Notify.style.background = 'red'
+    :Notify.style.background = 'blue'
+    }
   return (
     <div>
         <div className={ styles.container_header}>
@@ -39,16 +43,85 @@ const Home = () => {
                     <button className={styles.btn}><MdSearch/></button>
                 </div>
             </section>
-            <img src={Dish} alt='dish menu' className={ styles.dish}/>
+            <div className={styles.slider}>
+                <div className={styles.list}>
+                    <div className="items">
+                        <div className="content1">
+                            <input type="text" placeholder="enter your email here"/>
+                            <button className="btn_s"><MdSearch/></button>
+                            
+                        </div>
+                        <img src={Dish} alt='slider dish'/>
+                    </div>
+
+                    <div className="items">
+                        <div className="content1">
+                            <input type="text" placeholder="enter your email here"/>
+                            <button className="btn_s"><MdSearch/></button>
+                        
+                        </div>
+                        <img src={Dish} alt='slider dish'/>
+                    </div>
+
+                    <div className="items">
+                        <div className="content1">
+                            <input type="text" placeholder="enter your email here"/>
+                            <button className="btn_s"><MdSearch/></button>
+                       
+                        </div>
+                        <img src={Dish} alt='slider dish'/>
+                    </div>
+
+                    <div className="items">
+                        <div className="content1">
+                            <input type="text" placeholder="enter your email here"/>
+                            <button className="btn_s"><MdSearch/></button>
+                    
+                        </div>
+                        <img src={Dish} alt='slider dish'/>
+                    </div>
+
+                    <div className="items">
+                        <div className="content1">
+                            <input type="text" placeholder="enter your email here"/>
+                            <button className="btn_s"><MdSearch/></button>
+                       
+                        </div>
+                        <img src={Dish} alt='slider dish'/>
+                    </div>
+
+                    <div className="items">
+                        <div className="content1">
+                            <input type="text" placeholder="enter your email here"/>
+                            <button className="btn_s"><MdSearch/></button>
+                  
+                        </div>
+                        <img src={Dish} alt='slider dish'/>
+                    </div>
+                </div>
+                <div className="button">
+                    <button id="prev"><MdNavigateBefore/></button>
+                    <button id="next"><MdNavigateNext/></button>
+                </div>
+                <ul className="dots">
+                    <li clasName="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            {/* <img src={Dish} alt='dish menu' className={ styles.dish}/>
             <div className={ styles.container_radius}>
                 <div className={styles.radius}></div>
                 <div className={styles.radil}></div>
                 <div className={styles.radil}></div>
                 <div className={styles.radil}></div>
                 <div className={styles.radil}></div>
-            </div>
+            </div> */}
         </div>
         <SubHome/>
+        <NavLink to='/login' className={styles.Nav} >login</NavLink>
       
     </div>
   )
